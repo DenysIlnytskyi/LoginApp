@@ -185,10 +185,10 @@
             </objects>
             <point key="canvasLocation" x="1906" y="815"/>
         </scene>
-        <!--View Controller-->
+        <!--Image View Controller-->
         <scene sceneID="8JO-qb-DgW">
             <objects>
-                <viewController id="zSE-O3-vDJ" sceneMemberID="viewController">
+                <viewController id="zSE-O3-vDJ" customClass="ImageViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VHS-9z-yAU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -207,6 +207,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="blG-w7-vFk"/>
+                    <connections>
+                        <outlet property="imageView" destination="Yaz-ol-bvV" id="JP5-oY-fhA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CKe-yQ-yHY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

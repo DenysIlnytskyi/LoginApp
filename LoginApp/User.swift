@@ -22,7 +22,7 @@ struct User {
 struct Person {
     let name: String
     let surname: String
-    
+    let image: String
     
     var fullName: String {
         "\(name) \(surname)"
@@ -31,8 +31,8 @@ struct Person {
     static func getPerson() -> Person {
         Person(
             name: "Denys",
-            surname: "Ilnytskyi"
-    
+            surname: "Ilnytskyi",
+            image: "testImage"
         )
     }
 }

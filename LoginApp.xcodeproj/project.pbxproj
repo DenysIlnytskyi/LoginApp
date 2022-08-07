@@ -16,6 +16,7 @@
 		861D75DF28A0045900145BE5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D75DE28A0045900145BE5 /* User.swift */; };
 		861D75E128A0177D00145BE5 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D75E028A0177D00145BE5 /* GreetingViewController.swift */; };
 		861D75E328A01EAE00145BE5 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D75E228A01EAE00145BE5 /* MoreInfoViewController.swift */; };
+		861D75E528A0255C00145BE5 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D75E428A0255C00145BE5 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		861D75DE28A0045900145BE5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		861D75E028A0177D00145BE5 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		861D75E228A01EAE00145BE5 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
+		861D75E428A0255C00145BE5 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				861D75E028A0177D00145BE5 /* GreetingViewController.swift */,
 				861D75D0289FFA7800145BE5 /* Main.storyboard */,
 				861D75E228A01EAE00145BE5 /* MoreInfoViewController.swift */,
+				861D75E428A0255C00145BE5 /* ImageViewController.swift */,
 				861D75DE28A0045900145BE5 /* User.swift */,
 				861D75D3289FFA7900145BE5 /* Assets.xcassets */,
 				861D75D5289FFA7900145BE5 /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 				861D75DF28A0045900145BE5 /* User.swift in Sources */,
 				861D75CF289FFA7800145BE5 /* LogInViewController.swift in Sources */,
 				861D75CB289FFA7800145BE5 /* AppDelegate.swift in Sources */,
+				861D75E528A0255C00145BE5 /* ImageViewController.swift in Sources */,
 				861D75E328A01EAE00145BE5 /* MoreInfoViewController.swift in Sources */,
 				861D75E128A0177D00145BE5 /* GreetingViewController.swift in Sources */,
 				861D75CD289FFA7800145BE5 /* SceneDelegate.swift in Sources */,
