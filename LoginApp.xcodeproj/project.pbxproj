@@ -13,6 +13,7 @@
 		861D75D2289FFA7800145BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861D75D0289FFA7800145BE5 /* Main.storyboard */; };
 		861D75D4289FFA7900145BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 861D75D3289FFA7900145BE5 /* Assets.xcassets */; };
 		861D75D7289FFA7900145BE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861D75D5289FFA7900145BE5 /* LaunchScreen.storyboard */; };
+		861D75DF28A0045900145BE5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D75DE28A0045900145BE5 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		861D75D3289FFA7900145BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		861D75D6289FFA7900145BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		861D75D8289FFA7900145BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		861D75DE28A0045900145BE5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				861D75CC289FFA7800145BE5 /* SceneDelegate.swift */,
 				861D75CE289FFA7800145BE5 /* ViewController.swift */,
 				861D75D0289FFA7800145BE5 /* Main.storyboard */,
+				861D75DE28A0045900145BE5 /* User.swift */,
 				861D75D3289FFA7900145BE5 /* Assets.xcassets */,
 				861D75D5289FFA7900145BE5 /* LaunchScreen.storyboard */,
 				861D75D8289FFA7900145BE5 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				861D75DF28A0045900145BE5 /* User.swift in Sources */,
 				861D75CF289FFA7800145BE5 /* ViewController.swift in Sources */,
 				861D75CB289FFA7800145BE5 /* AppDelegate.swift in Sources */,
 				861D75CD289FFA7800145BE5 /* SceneDelegate.swift in Sources */,
