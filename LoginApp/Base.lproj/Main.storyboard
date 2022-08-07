@@ -93,23 +93,64 @@
         <!--Person-->
         <scene sceneID="Dmg-RP-QJD">
             <objects>
-                <viewController id="Pbj-68-paY" sceneMemberID="viewController">
+                <viewController id="Pbj-68-paY" customClass="GreetingViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qMW-xu-WfY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8Z-hT-ymL">
+                                <rect key="frame" x="152" y="557.5" width="110" height="39.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="88U-9M-ngK" kind="unwind" unwindAction="unwindSegueWithSegue:" id="HZa-QF-QAi"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Bes-4y-nMQ">
+                                <rect key="frame" x="160" y="149" width="94" height="139"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6j-06-71s">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Nk-2P-5Ks">
+                                        <rect key="frame" x="0.0" y="66" width="94" height="73"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="61"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Lmj-ml-7xA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lmj-ml-7xA" firstAttribute="trailing" secondItem="b8Z-hT-ymL" secondAttribute="trailing" constant="152" id="4px-An-As6"/>
+                            <constraint firstItem="Lmj-ml-7xA" firstAttribute="trailing" secondItem="Bes-4y-nMQ" secondAttribute="trailing" constant="160" id="Rer-2C-sH3"/>
+                            <constraint firstItem="Bes-4y-nMQ" firstAttribute="top" secondItem="Lmj-ml-7xA" secondAttribute="top" constant="105" id="VfT-1b-Vpr"/>
+                            <constraint firstItem="Lmj-ml-7xA" firstAttribute="bottom" secondItem="b8Z-hT-ymL" secondAttribute="bottom" constant="216" id="iic-Vg-Mp4"/>
+                            <constraint firstItem="b8Z-hT-ymL" firstAttribute="leading" secondItem="Lmj-ml-7xA" secondAttribute="leading" constant="152" id="lIA-QS-NVY"/>
+                            <constraint firstItem="Bes-4y-nMQ" firstAttribute="leading" secondItem="Lmj-ml-7xA" secondAttribute="leading" constant="160" id="pn0-OV-oDZ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Person" image="person.fill" catalog="system" id="D5I-sA-rXp"/>
+                    <connections>
+                        <outlet property="userNameLabel" destination="E6j-06-71s" id="g7D-nn-4sU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQG-4Y-hsQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="88U-9M-ngK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="29" y="815"/>
         </scene>
-        <!--View Controller-->
+        <!--More Info View Controller-->
         <scene sceneID="lBd-VP-5kL">
             <objects>
-                <viewController id="IyQ-qZ-KBF" sceneMemberID="viewController">
+                <viewController id="IyQ-qZ-KBF" customClass="MoreInfoViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KSB-GB-wlZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

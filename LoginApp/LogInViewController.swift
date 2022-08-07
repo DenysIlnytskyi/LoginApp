@@ -15,7 +15,21 @@ class LogInViewController: UIViewController {
     
     private let user = User.getUser()
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
+        
+        
+        viewControllers.forEach {
+            if let greetinVC = $0 as? GreetingViewController {
+                greetinVC.user = user
+            } else if let navigationVC = $0 as? UINavigationController {
+                let moreInfoVC = navigationVC.topViewController as! MoreInfoViewController
+                moreInfoVC.user = user
+            }
+        }
+    }
+    
     
     @IBAction func logInButtonPressed() {
         if logInTextField.text != user.login || passwordTextField.text != user.password {
@@ -31,6 +45,11 @@ class LogInViewController: UIViewController {
     
     @IBAction func forgotPasswordButtonPressed() {
         showAlert(with: "Oooops!", and: "Your password is ''password'' 😉")
+    }
+    
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        logInTextField.text = ""
+        passwordTextField.text = ""
     }
 }
 
